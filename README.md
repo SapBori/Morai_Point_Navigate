@@ -20,3 +20,5 @@ WayPoint Move(ros action 사용)
 
 ### 만약에 경로가 생기고 안움직이면 Morai -에서 Automode로 변경
 ### Lidar 맵이 생기지 않는다 -> sudo apt install ros-slam-gmapping 설치
+Ros_Point Move Demo
+[!my_video](https://drive.google.com/file/d/1g06gLS2Wv0s3-Mejqg12iqbUHV-qZH5K/view?usp=sharing)
