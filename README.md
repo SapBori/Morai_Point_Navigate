@@ -16,10 +16,12 @@
 # Gmapping 
 
 <img src="./image/gmapping.gif" title="Gmapping Start" alt="GMS">
+- Gmap 세이브
 
+---
 
 <img src="./image/gmapping_navi.gif" title="Gmapping Navi Start" alt="GMSN">
-
+- Gmap 네비게이션
 
 
 
