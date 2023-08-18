@@ -30,11 +30,11 @@
 
 8. (kw_slam_ws)에 있다고 가정 cd src/kw_tf/scripts/
 9. python application.py -> 지정된 Waypoint로 이동
-<img src="./image/application.png" title="Application Code Img" alt="Code">
+<img src="./image/application.png" width="600px" height="400px" title="Application Code Img" alt="Code">
 
 ### 만약에 경로가 생기고 안움직이면 Morai -에서 Automode로 변경
 ### Lidar 맵이 생기지 않는다 -> sudo apt install ros-slam-gmapping 설치
 Ros_Point Move Demo
 
-<img src="./image/point_navigator.gif" width="600px" title="point_navi" alt="Navi">
+<img src="./image/point_navigator.gif" title="point_navi" alt="Navi">
 [Demo](https://drive.google.com/file/d/1g06gLS2Wv0s3-Mejqg12iqbUHV-qZH5K/view?usp=sharing)
