@@ -23,4 +23,4 @@ WayPoint Move(ros action 사용)
 Ros_Point Move Demo
 
 
-[Video](https://drive.google.com/file/d/1g06gLS2Wv0s3-Mejqg12iqbUHV-qZH5K/view?usp=sharing)
+[Demo](https://drive.google.com/file/d/1g06gLS2Wv0s3-Mejqg12iqbUHV-qZH5K/view?usp=sharing)
