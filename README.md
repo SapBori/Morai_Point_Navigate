@@ -22,5 +22,5 @@ WayPoint Move(ros action 사용)
 ### Lidar 맵이 생기지 않는다 -> sudo apt install ros-slam-gmapping 설치
 Ros_Point Move Demo
 
-<img src="./image/point_navigator.gif" width="500px" height="500px" title="point_navi" alt="Code">
+<img src="./image/point_navigator.gif" width="500px" height="500px" title="point_navi" alt="Navi">
 [Demo](https://drive.google.com/file/d/1g06gLS2Wv0s3-Mejqg12iqbUHV-qZH5K/view?usp=sharing)
