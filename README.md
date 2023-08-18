@@ -16,7 +16,7 @@ WayPoint Move(ros action 사용)
 
 8. (kw_slam_ws)에 있다고 가정 cd src/kw_tf/scripts/
 9. python application.py -> 지정된 Waypoint로 이동
-[Code](Ros_wego_nav/image/application.png)
+<img src="image/application.png" width="300px" height="300px" title="Application Code Img" alt="Code">
 
 ### 만약에 경로가 생기고 안움직이면 Morai -에서 Automode로 변경
 ### Lidar 맵이 생기지 않는다 -> sudo apt install ros-slam-gmapping 설치
