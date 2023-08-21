@@ -1,7 +1,7 @@
-# Wego Scout Mini Inside Navigation
+# Wego Scout MiniK Lidar Navigation
 
 ## 목표
-- 주어진 맵내에서 목적지를 설정하면 자동으로 로봇이 경로를 계산해서 움직이게 하는 Navigating 주행 구현
+- Lidar를 이용해서 맵핑이 된 맵내에서 목적지를 설정하면 자동으로 로봇이 경로를 계산해서 움직이게 하는 Navigating 주행 구현
 
 ## How to Launch?
 
@@ -16,16 +16,15 @@
 이렇게 까지 하면 rviz가 켜지고 목적지 설정하면 로봇이 자동으로 경로를 계획하고 이동함
 ---
 
-## 주요 알고리즘
+## 주요 알고리즘 및 프로그램
    1. AMCL(Adaptive Monte Carlo Localization)
       - 로봇의 위치를 추정하고 보정하기 위해서 만든 알고리즘
       - Lidar로부터 받은 데이터에 Paticle 필터를 이용해서 로봇의 위치를 확률적으로 계산
    2. DWA(Dynamic Window Approach)
-      - (kinemetic trajectory를 생성하여 시작 지점에서 목표지점으로 이동할 수 있는 궤적(grid cell) 생성
-      - grid cell을 통해 비용을 인코딩 함 => 이후 컨트롤러가 로봇에 dx, dy, theta 속도를 결정)
-   4. ODOM
-   5. costmap
-
+      - 로봇의 속도 탐색 영역에서 로봇과 충돌 가능한 장애물을 회피 하면서, 목표점까지 빠르게 도달할 수 있는 속도를 선택
+   4. Odometry(ROS Open Source, 주행기록계) - 로봇의 처음위치는 모르나, 이동한 거리,이동한 좌표, 각각의 모터에 걸린 속도 등을 저장한다. 
+   5. costmap (ROS Open Source, 충돌방지 및 경로 최적화) - 아래 사진을 보면 빨간부분은 실제로 장애물을 뜯하고, 파란 부분은 충돌를 방지하고자 장애물 주변으로 설정해놓는 금지구역이다. 이 파란 영역을 얼마나 넓게 설정하거나 좁게 설정하는것에 따라 로봇의 경로 계획이 달라지며, 그에 따른 최단거리 및 최단시간이 변화한다.
+   <img src="./image/costmap.png" title="costmap img">
 # Gmapping 
 
 <img src="./image/gmapping.gif" title="Gmapping Start" alt="GMS">
