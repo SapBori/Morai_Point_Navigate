@@ -26,7 +26,7 @@
       - 로봇의 처음위치는 모르나, 이동한 거리,이동한 좌표, 각각의 모터에 걸린 속도 등을 저장한다. 
    5. costmap (ROS Open Source, 충돌방지 및 경로 최적화)
       - 아래 사진을 보면 빨간부분은 실제로 장애물을 뜯하고, 파란 부분은 충돌을 방지하고자 장애물 주변으로 설정해놓는 금지구역이다. 이 파란 영역을 얼마나 넓게 설정하거나 좁게 설정하는것에 따라 로봇의 경로 계획이 달라지며, 그에 따른 최단거리 및 최단시간이 변화한다.
-   <img src="./image/costmap.png" title="costmap img" width="400px" height="200px" align="center">
+   <img src="./image/costmap.png" title="costmap img" width="400px" height="300px" align="center">
 
 # Gmapping 
 - How to Launch의 6번에서 시작
