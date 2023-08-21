@@ -37,4 +37,4 @@
 Ros_Point Move Demo
 
 <img src="./image/point_navigator.gif" title="point_navi" alt="Navi">
-[Demo](https://drive.google.com/file/d/1g06gLS2Wv0s3-Mejqg12iqbUHV-qZH5K/view?usp=sharing)
+![Demo](https://drive.google.com/file/d/1g06gLS2Wv0s3-Mejqg12iqbUHV-qZH5K/view?usp=sharing, "Demo")
