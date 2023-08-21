@@ -51,11 +51,12 @@
 - kw_slam_ws의 kw_tf 패키지 내부에 maps폴더를 만들고 Map 파일들을 폴더안에 넣기 또는 navigator.launch 파일에서 map 경로 수정
 8. How to launch에서 (kw_slam_ws)에 있다고 가정 cd src/kw_tf/scripts/
 9. python application.py -> 지정된 Waypoint로 이동
-<img src="./image/application.png" width="600px" height="400px" title="Application Code Img" alt="Code">
+<img src="./image/application.png" width="600px" height="400px" title="Application Code Img" alt="Code",caption="Code">
 
 ### 만약에 경로가 생기고 안움직이면 Morai Drive Info에서 Automode로 변경
 ### Lidar 맵이 생기지 않는다 -> sudo apt install ros-slam-gmapping 설치
 Ros_Point Move Demo
 
 <img src="./image/point_navigator.gif" title="point_navi" alt="Navi">
+
 [Demo](https://drive.google.com/file/d/1g06gLS2Wv0s3-Mejqg12iqbUHV-qZH5K/view?usp=sharing)
