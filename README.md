@@ -1,5 +1,6 @@
 # Wego Scout Mini Inside Navigation
 
+## How to Launch?
 
 1. Morai 실행
 2. sensor (Lidar - Ros frame_id = lidar) 연결 
