@@ -49,9 +49,22 @@
 # WayPoint Move(ros action 사용)
 - (조건 : Gmapping이 완료)
 - kw_slam_ws의 kw_tf 패키지 내부에 maps폴더를 만들고 Map 파일들을 폴더안에 넣기 또는 navigator.launch 파일에서 map 경로 수정
-8. How to launch에서 (kw_slam_ws)에 있다고 가정 cd src/kw_tf/scripts/
-9. python application.py -> 지정된 Waypoint로 이동
+- How to launch 7번에서 시작
+- kw_slam_ws에 있다고 가정 cd src/kw_tf/scripts/
+- python application.py -> 지정된 Waypoint로 이동
+  
 <img src="./image/application.png" width="600px" height="400px" title="Application Code Img" alt="Code">
+   - x : x좌표
+   - y : y좌표
+   - yaw : Goal 위치에서의 로봇의 회전방향
+   - actionlib - action 관련 라이브러리
+   - MoveBaseAction - Action 관련 메세지 모듈
+         - MoveBasegActionGoal
+         - MoveBaseActionResult
+         - MoveBaseActionFeedback
+   - MoveBaseGoal - Goal의 정보 저장 
+      - geometry_msgs/PostStamped target_pose
+         - target_pose.pose.position(x,y,z), target_pose.pose.orientation(r,p,y,w))
 
 ### 만약에 경로가 생기고 안움직이면 Morai Drive Info에서 Automode로 변경
 ### Lidar 맵이 생기지 않는다 -> sudo apt install ros-slam-gmapping 설치
