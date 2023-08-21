@@ -39,7 +39,7 @@
 - How to Launch 7번에서 시작
 - navigation.launch를 실행 하면, rviz 창이 열림
 - rviz창에서 상단의 녹색의 2D Nav goal를 맵에 설정
-- 만약에 로봇의 현재 위치와 맵 상의 위치가 맞지 않느나면 상단의 2D Pose Estimate 실행해서 로봇의 위치를 교정
+- 만약에 로봇의 현재 위치와 맵 상의 위치가 맞지 않으면 상단의 2D Pose Estimate 실행해서 로봇의 위치를 교정
 - Nav goal를 설정하면 로봇이 알아서 goal로 향하는 경로를 만든 후(rviz상에 표시) goal를 향해 이동한다.
 <img src="./image/gmapping_navi.gif" title="Gmapping Navi Start" alt="GMSN">
 - Gmap 네비게이션
