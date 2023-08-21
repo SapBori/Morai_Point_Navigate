@@ -27,18 +27,27 @@
    <img src="./image/costmap.png" title="costmap img" width="400px" height="200px" align="center">
 
 # Gmapping 
-
+- How to Launch의 6번에서 시작
+- rosrun map_server map_saver 실행
+- 그럼 rviz창과 빈 화면이 나오는데 로봇을 움직이면 3초 간격으로 map이 업데이트 된다.
+- 저장을 완료 하려면 map_saver를 끄면 된다. 그럼 파일은 처음 시작 폴더에 map.png와 map.yaml 파일이 생겨난다.
 <img src="./image/gmapping.gif" title="Gmapping Start" alt="GMS">
 - Gmap 세이브
 
 ---
-
+# Navigation
+- How to Launch 7번에서 시작
+- navigation.launch를 실행 하면, rviz 창이 열림
+- rviz창에서 상단의 녹색의 2D Nav goal를 맵에 설정
+- 만약에 로봇의 현재 위치와 맵 상의 위치가 맞지 않느나면 상단의 2D Pose Estimate 실행해서 로봇의 위치를 교정
+- Nav goal를 설정하면 로봇이 알아서 goal로 향하는 경로를 만든 후(rviz상에 표시) goal를 향해 이동한다.
 <img src="./image/gmapping_navi.gif" title="Gmapping Navi Start" alt="GMSN">
 - Gmap 네비게이션
 
 # WayPoint Move(ros action 사용)
-
-8. (kw_slam_ws)에 있다고 가정 cd src/kw_tf/scripts/
+- (조건 : Gmapping이 완료)
+- kw_slam_ws의 kw_tf 패키지 내부에 maps폴더를 만들고 Map 파일들을 폴더안에 넣기 또는 navigator.launch 파일에서 map 경로 수정
+8. How to launch에서 (kw_slam_ws)에 있다고 가정 cd src/kw_tf/scripts/
 9. python application.py -> 지정된 Waypoint로 이동
 <img src="./image/application.png" width="600px" height="400px" title="Application Code Img" alt="Code">
 
