@@ -24,7 +24,8 @@
       - 로봇의 속도 탐색 영역에서 로봇과 충돌 가능한 장애물을 회피 하면서, 목표점까지 빠르게 도달할 수 있는 속도를 선택
    4. Odometry(ROS Open Source, 주행기록계) - 로봇의 처음위치는 모르나, 이동한 거리,이동한 좌표, 각각의 모터에 걸린 속도 등을 저장한다. 
    5. costmap (ROS Open Source, 충돌방지 및 경로 최적화) - 아래 사진을 보면 빨간부분은 실제로 장애물을 뜯하고, 파란 부분은 충돌를 방지하고자 장애물 주변으로 설정해놓는 금지구역이다. 이 파란 영역을 얼마나 넓게 설정하거나 좁게 설정하는것에 따라 로봇의 경로 계획이 달라지며, 그에 따른 최단거리 및 최단시간이 변화한다.
-   <img src="./image/costmap.png" title="costmap img">
+   <img src="./image/costmap.png" title="costmap img" width="300px" height="200px" align="left">
+
 # Gmapping 
 
 <img src="./image/gmapping.gif" title="Gmapping Start" alt="GMS">
